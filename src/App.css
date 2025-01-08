@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.reel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.reel-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.story-item {
+  flex: 0 0 auto;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin-right: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

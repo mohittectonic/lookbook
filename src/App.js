@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import ReactInstaStories from "react-insta-stories";
+import "./App.css";
 
 function App() {
+  const storyGroups = [
+    ["/images/photo.jpg", "/images/photo.jpg"],
+    ["/images/photo.jpg", "/images/photo.jpg"]
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="reel-container">
+      {storyGroups.map((mediaItems, i) => (
+        <div className="story-item" key={i}>
+          <ReactInstaStories
+            width={432}
+            height={932}
+            stories={mediaItems}
+            defaultInterval={5000}
+          />
+        </div>
+      ))}
     </div>
   );
 }
