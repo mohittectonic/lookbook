@@ -3,61 +3,108 @@ const lookbackData = [
     id: 1,
     pages: [
       {
-        mediaUrl: "/videos/video.mp4",
+        mediaUrl: "/images/photo2.jpeg",
         mediaType: "image",
         products: [
           {
             productId: 1,
-            productName: "Blue Denim Jacket",
-            productDescription: "Classic fit denim jacket",
-            productPrice: 99.99,
-            productUrl: "/products/blue-denim-jacket",
-            productImage: "https://via.placeholder.com/150",
+            productName: "Black Aviators",
+            productDescription: "On bewakoof.com",
+            productPrice: 129.99,
+            productUrl: "https://bewakoof.com",
+            productImage: "/images/sunglasses.webp",
             position: {
-              left: 20,
-              top: 30
-            }
+              left: 50,
+              top: 70,
+            },
           },
           {
             productId: 2,
-            productName: "White T-Shirt",
-            productDescription: "Cotton crew neck t-shirt",
-            productPrice: 29.99,
-            productUrl: "/products/white-tshirt",
-            productImage: "https://via.placeholder.com/150",
+            productName: "Light Blue Cotton Linen",
+            productDescription: "On Levis.com",
+            productPrice: 89.99,
+            productUrl: "https://levis.com",
+            productImage: "/images/shirt.jpg",
             position: {
-              left: 60,
-              top: 50
-            }
-          }
-        ]
+              left: 30,
+              top: 40,
+            },
+          },
+        ],
       },
       {
-        mediaUrl: "https://via.placeholder.com/1080x1920",
+        mediaUrl: "/videos/video2.mp4",
         mediaType: "video",
         products: [
           {
             productId: 3,
-            productName: "Black Jeans",
-            productDescription: "Slim fit black jeans",
-            productPrice: 79.99,
-            productUrl: "/products/black-jeans",
-            productImage: "https://via.placeholder.com/150",
+            productName: "Ray-Ban Aviator",
+            productDescription: "On Ray-Ban.com",
+            productPrice: 154.99,
+            productUrl: "https://ray-ban.com",
+            productImage: "/images/sunglasses.webp",
             position: {
-              left: 40,
-              top: 70
-            }
-          }
-        ]
-      }
-    ]
+              left: 45,
+              top: 30,
+            },
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2,
     pages: [
-      // Similar structure for next preview
-    ]
-  }
+      {
+        mediaUrl: "/images/photo.jpg",
+        mediaType: "image",
+        products: [
+          {
+            productId: 4,
+            productName: "Apple Watch Series 8",
+            productDescription: "On Apple.com",
+            productPrice: 399.99,
+            productUrl: "https://apple.com",
+            productImage: "/images/watch.jpg",
+            position: {
+              left: 60,
+              top: 50,
+            },
+          },
+          {
+            productId: 5,
+            productName: "Adidas Ultraboost",
+            productDescription: "On Adidas.com",
+            productPrice: 180.0,
+            productUrl: "https://adidas.com",
+            productImage: "/images/shoes.jpeg",
+            position: {
+              left: 40,
+              top: 70,
+            },
+          },
+        ],
+      },
+      {
+        mediaUrl: "/videos/video.mp4",
+        mediaType: "video",
+        products: [
+          {
+            productId: 6,
+            productName: "Black Saree",
+            productDescription: "On Nike.com",
+            productPrice: 35.0,
+            productUrl: "https://nike.com",
+            productImage: "/images/black_saree.jpg",
+            position: {
+              left: 50,
+              top: 40,
+            },
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default lookbackData;

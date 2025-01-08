@@ -1,18 +1,28 @@
 .carousel-container {
   width: 100%;
-  height: 200px;
   overflow: hidden;
+  padding: 20px 0;
   position: absolute;
   bottom: 18px;
+  z-index: 1000;
 }
 
 .carousel-track {
   display: flex;
-  overflow-x: scroll; /* Change from auto to scroll */
-  scroll-snap-type: x mandatory;
+  padding: 0 20px;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  white-space: nowrap;
+  -webkit-user-select: none; 
+  user-select: none;
+  cursor: grab;
+  gap: 10px;
+}
+
+.carousel-track:active {
+  cursor: grabbing;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -21,8 +31,8 @@
 
 .product-card {
   flex: 0 0 auto;
-  width: 200px;
-  height: 100px; /* Adjust height for better visibility */
+  width: 300px;
+  height: 100px;
   margin-right: 10px;
   background-color: #000000;
   border-radius: 8px;
@@ -30,4 +40,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.MuiCard-root {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
